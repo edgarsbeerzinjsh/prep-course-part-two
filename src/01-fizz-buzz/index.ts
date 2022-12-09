@@ -16,6 +16,14 @@
  * console.log('buzz')
  */
 
-function fizzBuzz(n: number) {}
+function fizzBuzz(n: number) {
+    for (let i = 1; i < n + 1; i++) {
+        let answer: any = "";
+        if (i % 3 == 0) answer += "fizz";
+        if (i % 5 == 0) answer += "buzz";
+        if (answer == "") answer = i;
+        console.log(answer)
+    }
+}
 
 export { fizzBuzz };
