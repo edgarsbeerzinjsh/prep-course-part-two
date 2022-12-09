@@ -10,6 +10,9 @@
  * reverse('Greetings!') === '!sgniteerG'
  */
 
-function reverse(str: string) {}
+function reverse(str: string) {
+    let answer: string = str.split("").reverse().join("");
+    return answer
+};
 
 export { reverse };

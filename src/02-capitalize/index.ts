@@ -11,6 +11,10 @@
  * capitalize('look, it is working!') === 'Look, It Is Working!'
  */
 
-function capitalize(str: string) {}
+function capitalize(str: string) {
+    const words: string[] = str.split(" ");
+    const firstLetters: string[] = words.map((word) => word.charAt(0).toUpperCase() + word.substring(1));
+    return firstLetters.join(" ")
+};
 
 export { capitalize };

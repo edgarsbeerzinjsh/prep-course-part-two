@@ -24,6 +24,6 @@ function fizzBuzz(n: number) {
         if (answer == "") answer = i;
         console.log(answer)
     }
-}
+};
 
 export { fizzBuzz };

@@ -9,7 +9,7 @@
 function parse(input: string) {
     const words: string[] = input.replace(/'/g, "").replace(/[^a-zA-Z ]/g, " ").split(" ");
     const firstLetters: string[] = words.map((word) => word.charAt(0).toUpperCase());
-    return firstLetters.join("");
-}
+    return firstLetters.join("")
+};
 
 export { parse };
