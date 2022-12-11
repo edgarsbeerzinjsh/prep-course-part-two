@@ -10,7 +10,14 @@
  */
 
 class Words {
-  count(str: string) {}
-}
+  count(str: string) {
+    const words: string[] = str.toLowerCase().replace(/(\s+)/g, " ").trim().split(" ");
+    const counts: {} = words.reduce((count: any, word: any) => {
+        count[word] = count.hasOwnProperty(word) ? count[word] + 1 : 1;
+        return count;
+        }, {});
+    return counts;
+  };
+};
 
 export { Words };
