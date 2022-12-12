@@ -20,7 +20,8 @@ class HighScores {
 
   get personalTopThree() {
     let topThree: number[] = [...this.scores];
-    return topThree.sort((a, b) => a - b).reverse().slice(0, 3);
+    // return [...this.scores].sort((a, b) => b - a).slice(0, 3);
+    return topThree.sort((a, b) => b - a).slice(0, 3);
   }
 }
 
