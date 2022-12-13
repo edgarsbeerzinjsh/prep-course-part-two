@@ -17,12 +17,17 @@
  */
 
 function pyramid(n: number) {
-    let pyramidChange: string = " ".repeat(n - 1);
-    const pyramidCenter: string = "#";
-    for (let i = 0; i < n; i++) {
-        console.log (pyramidChange.split("").reverse().join("") + pyramidCenter + pyramidChange);
-        pyramidChange = pyramidChange.replace(pyramidChange.charAt(i), pyramidCenter);
-    };
-};
+  let pyramidChange: string = " ".repeat(n - 1);
+  const pyramidCenter: string = "#";
+  for (let i = 0; i < n; i++) {
+    console.log(
+      pyramidChange.split("").reverse().join("") + pyramidCenter + pyramidChange
+    );
+    pyramidChange = pyramidChange.replace(
+      pyramidChange.charAt(i),
+      pyramidCenter
+    );
+  }
+}
 
 export { pyramid };

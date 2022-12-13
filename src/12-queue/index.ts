@@ -12,14 +12,14 @@
  * q.remove(); // returns 1
  */
 
- class Queue {
+class Queue {
   myQ: number[] = [];
   add(n: number) {
-    this.myQ.push(n)
+    this.myQ.push(n);
   }
 
   remove() {
-    return this.myQ.shift()
+    return this.myQ.shift();
   }
 }
 // let myQ: number[] = [];

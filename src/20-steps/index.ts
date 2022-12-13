@@ -20,12 +20,12 @@
  */
 
 function steps(n: number) {
-    let step = " ".repeat(n);
-    const pyramidSymbol = "#";
-    for (let i = 0; i < n; i++) {
-        step = step.replace(step.charAt(i), pyramidSymbol);
-        console.log (step);
-    };
-};
+  let step = " ".repeat(n);
+  const pyramidSymbol = "#";
+  for (let i = 0; i < n; i++) {
+    step = step.replace(step.charAt(i), pyramidSymbol);
+    console.log(step);
+  }
+}
 
 export { steps };

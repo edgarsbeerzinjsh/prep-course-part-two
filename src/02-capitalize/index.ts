@@ -12,9 +12,11 @@
  */
 
 function capitalize(str: string) {
-    const words: string[] = str.split(" ");
-    const firstLetters: string[] = words.map((word) => word.charAt(0).toUpperCase() + word.substring(1));
-    return firstLetters.join(" ")
-};
+  const words: string[] = str.split(" ");
+  const firstLetters: string[] = words.map(
+    (word) => word.charAt(0).toUpperCase() + word.substring(1)
+  );
+  return firstLetters.join(" ");
+}
 
 export { capitalize };

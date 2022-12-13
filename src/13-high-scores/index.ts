@@ -11,7 +11,7 @@ class HighScores {
   }
 
   get latest() {
-    return this.scores[this.scores.length-1];
+    return this.scores[this.scores.length - 1];
   }
 
   get personalBest() {

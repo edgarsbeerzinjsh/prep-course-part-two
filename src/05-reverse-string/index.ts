@@ -11,8 +11,8 @@
  */
 
 function reverse(str: string) {
-    let answer: string = str.split("").reverse().join("");
-    return answer
-};
+  let answer: string = str.split("").reverse().join("");
+  return answer;
+}
 
 export { reverse };

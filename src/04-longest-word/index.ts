@@ -13,12 +13,12 @@
  */
 
 function longestWord(sen: string) {
-    const words: string[] = sen.replace(/[^a-zA-Z ]/g, "").split(" ");
-    let answer: string = words[0];
-    for (let i = 1; i < words.length; i++) {
-        if (words[i].length > answer.length) answer = words[i]
-    };
-    return answer
-};
+  const words: string[] = sen.replace(/[^a-zA-Z ]/g, "").split(" ");
+  let answer: string = words[0];
+  for (let i = 1; i < words.length; i++) {
+    if (words[i].length > answer.length) answer = words[i];
+  }
+  return answer;
+}
 
 export { longestWord };

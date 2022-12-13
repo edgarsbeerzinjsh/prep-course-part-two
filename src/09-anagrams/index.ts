@@ -13,10 +13,19 @@
  */
 
 function anagrams(stringA: string, stringB: string) {
-    function once(strArrStr: string) {
-        return strArrStr.replace(/[^A-Za-z]/g,'').split("").sort().join("").toLowerCase()
-    }
-    return once(stringA) === once(stringB)
-};
+  // function once(strArrStr: string) {
+  //     return strArrStr.replace(/[^A-Za-z]/g,'').split("").sort().join("").toLowerCase()
+  // }
+  // return once(stringA) === once(stringB)
+  function once(strArrStr: string) {
+    return strArrStr
+      .replace(/[^A-Za-z]/g, "")
+      .split("")
+      .sort()
+      .join("")
+      .toLowerCase();
+  }
+  return once(stringA) === once(stringB);
+}
 
 export { anagrams };

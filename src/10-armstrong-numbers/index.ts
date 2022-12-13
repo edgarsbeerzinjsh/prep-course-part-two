@@ -12,13 +12,15 @@
  */
 
 function validate(n: number) {
-    const ntoString: string = n.toString();
-    const nlength: number = ntoString.length;
-    let ntoArray: number[] = Array.from(ntoString.split(""), Number);
-    ntoArray.unshift(0);
-    const armstrong: number = ntoArray.reduce((total, current) => total + current ** nlength);
-    
-    return armstrong === n
-};
+  const ntoString: string = n.toString();
+  const nlength: number = ntoString.length;
+  let ntoArray: number[] = Array.from(ntoString.split(""), Number);
+  ntoArray.unshift(0);
+  const armstrong: number = ntoArray.reduce(
+    (total, current) => total + current ** nlength
+  );
+
+  return armstrong === n;
+}
 
 export { validate };

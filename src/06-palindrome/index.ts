@@ -14,10 +14,10 @@
  */
 
 function palindrome(str: string) {
-    let isPalindrome = false;
-    let answer = str.split("").reverse().join("");
-    if (answer === str) isPalindrome = true;
-    return isPalindrome
-};
+  let isPalindrome = false;
+  let answer = str.split("").reverse().join("");
+  if (answer === str) isPalindrome = true;
+  return isPalindrome;
+}
 
 export { palindrome };
