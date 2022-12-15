@@ -16,7 +16,9 @@
 function palindrome(str: string) {
   let isPalindrome = false;
   let answer = str.split("").reverse().join("");
-  if (answer === str) isPalindrome = true;
+  if (answer === str) {
+    isPalindrome = true
+  };
   return isPalindrome;
 }
 

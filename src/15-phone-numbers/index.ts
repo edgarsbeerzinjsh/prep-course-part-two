@@ -36,7 +36,9 @@ class PhoneNumber {
   number() {
     let answer: string = this.phone.replace(/[^0-9]/g, "");
     const isCountryCode = answer.length == 11 && Number(answer[0]) == 1;
-    if (isCountryCode) answer = answer.substring(1);
+    if (isCountryCode) {
+      answer = answer.substring(1)
+    };
 
     const isDigitCount = answer.length == 10;
     const isAreaCode = ![0, 1].includes(Number(answer[0]));

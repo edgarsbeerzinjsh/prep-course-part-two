@@ -14,9 +14,13 @@
 
 function reverse(int: number) {
   let negative: boolean = false;
-  if (int < 0) negative = true;
+  if (int < 0) {
+    negative = true
+  };
   let answer: string = int.toString().split("").reverse().join("");
-  if (negative) answer = "-" + Number(answer.replace("-", ""));
+  if (negative) {
+    answer = "-" + Number(answer.replace("-", ""))
+  };
   return Number(answer);
 }
 
